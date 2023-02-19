@@ -68,6 +68,20 @@ repeated code
     padding: 90px 0;
 }
 
+.section-caption {
+    
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section-caption h3 {
+    font-size: 32px;
+    
+}
+.pb-45{
+    padding-bottom: 45px;
+}
+
 /* ================================================
 navbar /header
 ============================================ */
@@ -241,4 +255,49 @@ services
 ============================================ */
 .services {
     background-color: #F8F9FA;
+}
+
+.single-services {
+    background: transparent;
+    padding: 30px 20px;
+}
+
+.single-services h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 20px 0;
+    position: relative;
+}
+
+.single-services h4::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 10%;
+    background-color: var(--theme-color);
+    bottom: -15px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%);
+    transition: var(--transition);
+}
+
+.single-services:hover.single-services h4::after {
+    width: 50%;
+    transition: var(--transition);
+   
+
+}
+
+.single-services i {
+    font-size: 44px;
+    transition: var(--transition);
+
+}
+.single-services:hover.single-services i{
+    transform: translateY(10px);
+    transition: var(--transition);
+    color: var(--theme-color);
+
 }
