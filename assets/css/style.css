@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
 /* ================================================
 variable
 ============================================ */
@@ -28,6 +30,7 @@ resetr code
 }
 
 body {
+    font-family: 'Montserrat', sans-serif;
     background-color: var(--white-color);
     color: var(--black-color);
 }
@@ -300,4 +303,13 @@ services
     transition: var(--transition);
     color: var(--theme-color);
 
+}
+
+/* ================================================
+available for hire me
+============================================ */
+.availabe-text h4{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--black-color);
 }
