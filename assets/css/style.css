@@ -536,12 +536,13 @@ blogs
     left: 0;
 }
 
-.single-blog-item img{
+.single-blog-item img {
     transform: scale(1);
     transition: var(--transition);
 
 }
-.single-blog-item:hover img{
+
+.single-blog-item:hover img {
     transform: scale(1.1) rotate(1deg);
     transition: var(--transition);
 }
@@ -551,7 +552,7 @@ blogs
 /* ================================================
 contact us
 ============================================ */
-.single-contact-media{
+.single-contact-media {
     padding: 20px;
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
@@ -559,7 +560,7 @@ contact us
 
 }
 
-.single-contact-media-leftline{
+.single-contact-media-leftline {
     position: absolute;
     top: 0;
     left: 0;
@@ -570,13 +571,13 @@ contact us
 
 }
 
-.single-contact-media:hover .single-contact-media-leftline{
+.single-contact-media:hover .single-contact-media-leftline {
     height: 100%;
     transition: var(--transition);
 
 }
 
-.single-contact-media-rightline{
+.single-contact-media-rightline {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -584,7 +585,8 @@ contact us
     width: 2px;
     background-color: var(--theme-color);
 }
-.single-contact-media:hover .single-contact-media-rightline{
+
+.single-contact-media:hover .single-contact-media-rightline {
     height: 100%;
     transition: var(--transition);
 }
@@ -592,53 +594,125 @@ contact us
 
 
 
-.single-contact-media i{
+.single-contact-media i {
     font-size: 40px;
     transition: var(--transition);
 
 }
-.single-contact-media strong{
+
+.single-contact-media strong {
     display: block;
     margin: 10px 0;
 }
 
 
-.single-contact-media:hover{
+.single-contact-media:hover {
     box-shadow: var(--shadow);
     /* transform: translateY(-10px); */
     transition: var(--transition);
 }
 
-.single-contact-media:hover i{
+.single-contact-media:hover i {
     color: var(--theme-color);
     transition: var(--transition);
 
 }
 
-.single-contact-media p{
+.single-contact-media p {
     opacity: 0;
     transition: var(--transition);
 
 }
-.single-contact-media:hover.single-contact-media p{
+
+.single-contact-media:hover.single-contact-media p {
     opacity: 1;
     transition: var(--transition);
 
 }
 
 /* contact form  */
-.form-control{
+.form-control {
     border-radius: 0;
     border: 2px solid #e0e0e0;
-    padding: 10px ;
+    padding: 10px;
 
 
 }
-.form-control:focus{
+
+.form-control:focus {
     box-shadow: none;
     border: 2px solid var(--theme-color);
 }
-.form-control::placeholder{
+
+.form-control::placeholder {
     font-size: 14px;
     font-weight: 500;
 }
+
+/* ================================================
+footer
+============================================ */
+footer {
+    background-color: #212121;
+}
+
+.footer-social-media ul li a i {
+    background-color: #313131;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    color: var(--white-color);
+    opacity: .6;
+    border-radius: 50%;
+    transition: var(--transition);
+    overflow: hidden;
+    z-index: 9999999;
+
+
+}
+
+.footer-social-media ul li a {
+    position: relative;
+    z-index: 1;
+    height: 45px;
+    width: 45px;
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.footer-social-media ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 0%;
+    width: 100%;
+    background-color: var(--theme-color);
+    z-index: 1;
+    transition: var(--transition);
+}
+
+.footer-social-media ul li a:hover:before {
+    height: 100%;
+    transition: var(--transition);
+    opacity: 1;
+    right: 0;
+    top: 0;
+    z-index: -1;
+
+}
+
+
+/* .footer-social-media ul li a i:hover {
+    background-color: var(--theme-color);
+    opacity: 1;
+    transform: rotate(360deg);
+    transition: var(--transition);
+    z-index: 999999;
+    position: relative;
+
+
+} */
