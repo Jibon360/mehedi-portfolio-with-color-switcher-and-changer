@@ -1,0 +1,244 @@
+/* ================================================
+variable
+============================================ */
+:root {
+    --theme-color: #EE8683;
+    --white-color: #fff;
+    --black-color: #212529;
+    --dark-color: #6c757d;
+    --transition: .5s all;
+    --shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb), .15) !important;
+    --shadow-sm: 0 .125rem .25rem rgba(var(--bs-body-color-rgb), .075) !important;
+    --shadow-lg: 0 1rem 3rem rgba(var(--bs-body-color-rgb), .175) !important;
+}
+
+
+
+
+/* ================================================
+resetr code
+============================================ */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    color: var(--black-color);
+}
+
+p {
+    color: var(--dark-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: inherit;
+}
+
+/* ================================================
+repeated code 
+============================================ */
+.text-brand {
+    color: var(--theme-color);
+}
+
+.pt-90 {
+    padding-top: 90px;
+}
+
+.pb-90 {
+    padding-bottom: 90px;
+}
+
+.p-90 {
+    padding: 90px 0;
+}
+
+/* ================================================
+navbar /header
+============================================ */
+.navbar {
+    padding: 22px 0;
+    transition: var(--transition);
+
+}
+
+.navbar-brand {
+    color: var(--white-color);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar-brand::first-letter {
+    color: var(--theme-color);
+
+}
+
+.navbar-nav .nav-item {
+    margin: 0 20px !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: var(--white-color);
+    text-transform: capitalize;
+    letter-spacing: .6px;
+    transition: var(--transition);
+    position: relative;
+    padding: 0;
+    display: inline-block;
+    padding-bottom: 5px;
+
+
+}
+
+.navbar-nav .nav-item .nav-link::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: var(--theme-color);
+    bottom: 0;
+    transition: var(--transition);
+    right: 0;
+
+}
+
+.navbar-nav .nav-item .nav-link:hover::before {
+    width: 100%;
+    transition: var(--transition);
+    left: 0;
+
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: var(--theme-color);
+    transition: var(--transition);
+
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--theme-color);
+    transition: var(--transition);
+}
+
+/* sticky navbar */
+
+.navbar.navbg {
+    background-color: var(--white-color);
+    padding: 10px;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+
+}
+
+.navbar.navbg .nav-link {
+    color: var(--black-color);
+}
+
+.navbar.navbg .navbar-brand {
+    color: var(--black-color);
+}
+
+/* ================================================
+banner/slider/hero css
+============================================ */
+.banner {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: .7;
+    z-index: -1;
+
+}
+
+.banner-fluid {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.banner-text h4 {
+    color: var(--white-color);
+}
+
+.banner-text h1 {
+    color: var(--white-color);
+}
+
+.banner-text p {
+    color: var(--white-color);
+    margin: 20px 0;
+}
+
+
+/* ================================================
+about
+============================================ */
+.about-right h3 span {
+    font-weight: 500;
+}
+
+.about-right h4 {
+    font-weight: 500;
+}
+
+.about-social-media ul li a i {
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid var(--dark-color);
+    color: var(--black-color);
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.about-social-media ul li a i:hover {
+    border: 2px solid var(--theme-color);
+    color: var(--theme-color);
+    transition: var(--transition);
+    transform: rotate(360deg);
+
+}
+
+/* ================================================
+services
+============================================ */
+.services {
+    background-color: #F8F9FA;
+}
