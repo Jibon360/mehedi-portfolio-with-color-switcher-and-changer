@@ -12,6 +12,7 @@ variable
     --shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb), .15) !important;
     --shadow-sm: 0 .125rem .25rem rgba(var(--bs-body-color-rgb), .075) !important;
     --shadow-lg: 0 1rem 3rem rgba(var(--bs-body-color-rgb), .175) !important;
+    --sec-bg:#F8F9FA
 }
 
 
@@ -83,6 +84,9 @@ repeated code
 }
 .pb-45{
     padding-bottom: 45px;
+}
+img{
+    width: 100%;
 }
 
 /* ================================================
@@ -257,7 +261,7 @@ about
 services
 ============================================ */
 .services {
-    background-color: #F8F9FA;
+    background-color: var(--sec-bg);
 }
 
 .single-services {
@@ -312,4 +316,39 @@ available for hire me
     font-size: 32px;
     font-weight: 600;
     color: var(--black-color);
+}
+
+/* ================================================
+testimonial /client
+============================================ */
+.client{
+    background-color: var(--sec-bg);
+}
+.single-client i{
+    font-size: 45px;
+    color: var(--theme-color);
+    display: block;
+}
+.single-client img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    max-height: 100px;
+    max-width: 100px;
+    margin: 20px auto;
+}
+.single-client p{
+    font-style: italic;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+	width: 10px;
+	height: 10px;
+	margin: 5px 7px;
+	background: var(--dark-color);
+	
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background: var(--theme-color);
 }
