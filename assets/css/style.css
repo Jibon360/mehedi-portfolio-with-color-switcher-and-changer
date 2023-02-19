@@ -447,3 +447,101 @@ work item
     transition: var(--transition);
 
 }
+
+
+/* ================================================
+blogs
+============================================ */
+.blog {
+    background-color: var(--sec-bg);
+}
+
+.single-blog-item {
+    background: var(--white-color);
+    overflow: hidden;
+}
+
+.single-blogbox {
+    padding: 20px;
+}
+
+.single-blog-item h4 a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--black-color);
+    position: relative;
+    padding-bottom: 5px;
+    transition: var(--transition);
+
+}
+
+.single-blog-item h4 a:hover {
+    color: var(--theme-color);
+    transition: var(--transition);
+
+}
+
+.single-blog-item h4 a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 0%;
+    background-color: var(--theme-color);
+    transition: var(--transition);
+    color: var(--theme-color);
+
+
+}
+
+.single-blog-item h4 a:hover::before {
+    width: 100%;
+    left: 0;
+    color: var(--theme-color);
+}
+
+
+
+.single-blog-item h5 p {
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.readmorebtn {
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+    transition: var(--transition);
+
+}
+
+.readmorebtn::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 0%;
+    background-color: var(--theme-color);
+    transition: var(--transition);
+
+}
+
+.readmorebtn:hover.readmorebtn::before {
+    width: 100%;
+    transition: var(--transition);
+    left: 0;
+}
+
+.single-blog-item img{
+    transform: scale(1);
+    transition: var(--transition);
+
+}
+.single-blog-item:hover img{
+    transform: scale(1.1) rotate(1deg);
+    transition: var(--transition);
+}
