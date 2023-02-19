@@ -12,7 +12,7 @@ variable
     --shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb), .15) !important;
     --shadow-sm: 0 .125rem .25rem rgba(var(--bs-body-color-rgb), .075) !important;
     --shadow-lg: 0 1rem 3rem rgba(var(--bs-body-color-rgb), .175) !important;
-    --sec-bg:#F8F9FA
+    --sec-bg: #F8F9FA
 }
 
 
@@ -73,19 +73,21 @@ repeated code
 }
 
 .section-caption {
-    
+
     max-width: 600px;
     margin: 0 auto;
 }
 
 .section-caption h3 {
     font-size: 32px;
-    
+
 }
-.pb-45{
+
+.pb-45 {
     padding-bottom: 45px;
 }
-img{
+
+img {
     width: 100%;
 }
 
@@ -293,7 +295,7 @@ services
 .single-services:hover.single-services h4::after {
     width: 50%;
     transition: var(--transition);
-   
+
 
 }
 
@@ -302,7 +304,8 @@ services
     transition: var(--transition);
 
 }
-.single-services:hover.single-services i{
+
+.single-services:hover.single-services i {
     transform: translateY(10px);
     transition: var(--transition);
     color: var(--theme-color);
@@ -312,7 +315,7 @@ services
 /* ================================================
 available for hire me
 ============================================ */
-.availabe-text h4{
+.availabe-text h4 {
     font-size: 32px;
     font-weight: 600;
     color: var(--black-color);
@@ -321,15 +324,17 @@ available for hire me
 /* ================================================
 testimonial /client
 ============================================ */
-.client{
+.client {
     background-color: var(--sec-bg);
 }
-.single-client i{
+
+.single-client i {
     font-size: 45px;
     color: var(--theme-color);
     display: block;
 }
-.single-client img{
+
+.single-client img {
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -337,18 +342,108 @@ testimonial /client
     max-width: 100px;
     margin: 20px auto;
 }
-.single-client p{
+
+.single-client p {
     font-style: italic;
 }
 
 .owl-theme .owl-dots .owl-dot span {
-	width: 10px;
-	height: 10px;
-	margin: 5px 7px;
-	background: var(--dark-color);
-	
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: var(--dark-color);
+
 }
 
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-	background: var(--theme-color);
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--theme-color);
+}
+
+/* ================================================
+work item
+============================================ */
+.single-work {
+    position: relative;
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.work-overly1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background-color: var(--black-color);
+    opacity: .6;
+    transition: var(--transition);
+}
+
+.single-work:hover .work-overly1 {
+    height: 50%;
+    transition: var(--transition);
+
+}
+
+.work-overly2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background-color: var(--black-color);
+    opacity: .6;
+    transition: var(--transition);
+
+}
+
+.single-work:hover .work-overly2 {
+    height: 50%;
+    transition: var(--transition);
+}
+
+.work-overly-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: var(--transition);
+
+}
+
+.work-overly-icon a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.work-overly-icon a i {
+    font-size: 20px;
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+    height: 40px;
+    width: 40px;
+    line-height: 38px;
+    transition: var(--transition);
+    transform: scale(0);
+    border-radius: 50%;
+    box-shadow: var(--shadow-lg);
+
+
+}
+
+.single-work:hover .work-overly-icon a i {
+    transform: scale(1);
+    transition: var(--transition);
+
+
+}
+
+.work-overly-icon a i:hover {
+    background-color: var(--theme-color);
+    border: 2px solid var(--white-color);
+    color: var(--white-color-color);
+    transform: rotate(360deg);
+    transition: var(--transition);
+
 }
