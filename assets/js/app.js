@@ -12,17 +12,7 @@ $(() => {
     })
 
 
-    // type js banner/slider typing js text
-    var typed = new Typed('.bannertext', {
-        strings: ['MEHEDI HASSAN JIBON', 'WEB DESIGNER', 'WEB DEVELOPER', 'GRAPHICS DESIGNER', 'UI/UX EXPERT'],
-        smartBackspace: true, // Default value
-        typeSpeed: 100,
-        startDelay: 100,
-        backSpeed: 100,
-        backDelay: 1000,
-        loop: true,
-        loopCount: Infinity,
-    });
+  
 
 
     // client/testimonial owl carousel

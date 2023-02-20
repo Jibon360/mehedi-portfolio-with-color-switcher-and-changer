@@ -2,6 +2,12 @@
 /* // No media query for `xs` since this is the default in Bootstrap */
 
 /* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 320px) {
+    .banner-text h1 {
+        font-size: 35px;
+    }
+}
+
 @media (min-width: 576px) {}
 
 /* // Medium devices (tablets, 768px and up) */
@@ -17,7 +23,7 @@
     }
 
     .navbar-nav .nav-item .nav-link {
-       color: var(--black-color);
+        color: var(--black-color);
     }
 }
 
